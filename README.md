@@ -4,7 +4,7 @@
 
 ## Description
 
-Project Gutenberg's online ebook reader uses very small font sizes, which makes it hard to read. Using the browser's zoom is not the best option to get around this, at it also increases margins, paddings, etc. So, I decided to create and share this userstyle, so others can have a better experience reading books from that project on their website.
+Project Gutenberg's online ebook reader uses very small font sizes, which makes it hard to read. Using the browser's zoom is not the best option to get around this, as it also increases margins, paddings, etc. So, I decided to create and share this userstyle, so others can have a better experience reading books from that project on their website.
 
 ## Install
 

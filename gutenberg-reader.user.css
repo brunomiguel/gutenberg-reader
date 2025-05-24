@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           gutenberg.org
 @namespace      github.com/openstyles/stylus
-@version        1.0.0
+@version        1.0.1
 @description    A new userstyle
 @author         Me
 @preprocessor   stylus
@@ -118,6 +118,7 @@
 
     p {
         margin-bottom: (fontSize * 1.38) !important;
+        text-align: left !important; /* fixes the issue with some books having the text align defined in the paragraph styling */
     }
 
     p.footnote {

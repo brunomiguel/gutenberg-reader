@@ -10,7 +10,7 @@ Project Gutenberg's online ebook reader uses very small font sizes, which makes 
 
 **To install, click the button below or copy the content from gutenberg-reader.user.css.**
 
-[![Install directly with Stylus](https://img.shields.io/badge/Install%20directly%20with-Stylus-00adad.svg)](https://)
+[![Install directly with Stylus](https://img.shields.io/badge/Install%20directly%20with-Stylus-00adad.svg)](https://codeberg.org/brunomiguel/gutenberg-reader/raw/branch/main/gutenberg-reader.user.css)
 
 ## Options
 - choose between light and dark theme
@@ -18,4 +18,4 @@ Project Gutenberg's online ebook reader uses very small font sizes, which makes 
 - use a serif font from google fonts or use the default one from the browser
 
 ## Screenshot
-![Screenshot](https://)
+![Screenshot](https://codeberg.org/brunomiguel/gutenberg-reader/raw/branch/main/screenshot.webp)

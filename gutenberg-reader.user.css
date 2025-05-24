@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           gutenberg.org
 @namespace      github.com/openstyles/stylus
-@version        1.0.5
+@version        1.0.6
 @description    A new userstyle
 @author         Me
 @preprocessor   stylus
@@ -63,6 +63,10 @@
         margin-right: 10vw !important;
         background-color: #fff;
         padding-top: ((fontSize * 2) + (fontSize / 2)) !important;
+    }
+
+    blockquote {
+        font-family: "Playfair Display", serif !important;
     }
 
     /*** CSS Breakpoints ***/

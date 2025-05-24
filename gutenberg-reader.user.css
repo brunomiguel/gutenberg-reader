@@ -1,0 +1,176 @@
+/* ==UserStyle==
+@name           gutenberg.org
+@namespace      github.com/openstyles/stylus
+@version        1.0.0
+@description    A new userstyle
+@author         Me
+@preprocessor   stylus
+
+@var text fontSize  "Font size (used to calculate the line height and some margins)" 23px
+@var checkbox customSerif "Use custom Serif font (Playfair Display) from Google Fonts?" 0
+@var checkbox colorScheme "Choose between light (default) and dark mode" 0
+==/UserStyle== */
+@-moz-document url-prefix("https://www.gutenberg.org/cache/") {
+
+    if customSerif {
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+    }
+
+    if colorScheme {
+        :root {
+            color-scheme: dark !important;
+        }
+
+        body {
+            background-color: #222 !important;
+        }
+
+        a {
+            color: #71adf6 !important;
+        }
+
+        a:hover,
+        a:active,
+        a:focus {
+            color: #9dfa88 !important;
+        }
+
+        body,
+        #pg-header div,
+        #pg-footer div,
+        #pg-header #pg-machine-header p {
+            color: #ddd !important;
+        }
+
+    }
+
+    body,
+    div,
+    p,
+    a {
+        transition: background-color 1s, color 0.72s, all .62s !important;
+    }
+
+    body,
+    html {
+        font-size: fontSize !important;
+    }
+
+    body {
+        text-align: left !important;
+        line-height: 1.62rem !important;
+        margin-left: 10vw !important;
+        margin-right: 10vw !important;
+        background-color: #fff;
+        padding-top: ((fontSize * 2) + (fontSize / 2)) !important;
+    }
+
+    /*** CSS Breakpoints ***/
+    @media screen and (min-width: 1201px) {
+        body {
+            margin-left: 16vw !important;
+            margin-right: 16vw !important;
+        }
+    }
+
+    @media screen and (min-width: 1367px) {
+        body {
+            margin-left: 24vw !important;
+            margin-right: 24vw !important;
+        }
+    }
+
+    @media screen and (min-width: 1601px) {
+        body {
+            margin-left: 26vw !important;
+            margin-right: 26vw !important;
+        }
+    }
+
+    /*** DropCap Styling ***/
+    span.dropcap {
+        font-family: "Playfair Display", serif !important;
+    }
+
+    /*** Titles Styling ***/
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: "Playfair Display", serif !important;
+        font-weight: 300 !important;
+    }
+
+    h2 {
+        font-size: 2rem !important;
+    }
+
+    h3 {
+        font-size: 1.76rem !important;
+    }
+
+    /*** Text Styling ***/
+    .chapter p {
+        text-indent: 0px !important;
+    }
+
+    p {
+        margin-bottom: (fontSize * 1.38) !important;
+    }
+
+    p.footnote {
+        font-family: "Playfair Display", serif !important;
+    }
+
+    table {
+        font-size: .86em !important;
+    }
+
+    /*** Page Header Styling ***/
+    #pg-header-heading {
+        margin-bottom: 2rem !important;
+        font-style: italic !important;
+        line-height: ((fontSize * 2) + (fontSize / 2)) !important;
+    }
+
+    #pg-header div,
+    #pg-footer div,
+    #pg-header #pg-machine-header p {
+        font-size: 18px !important;
+        line-height: (fontSize + 38%) !important;
+    }
+    
+    #pg-header #pg-machine-header p {
+        margin-left: 0px !important;
+        margin-bottom: 0px !important;
+        margin-top: 0px !important;
+    }
+    
+    #pg-header div {
+        margin-left: 0px !important;
+    }
+    
+    #pg-machine-header,
+    #pg-header #pg-header-authlist {
+        font-family: monospace !important;
+        text-align: center !important;
+    }
+    
+    #pg-header #pg-header-authlist {
+        margin-top: ((fontSize * 2) * (fontSize / 2)) !important;
+        margin-bottom: ((fontSize * 2) * (fontSize / 2)) !important;
+    }
+
+    #pg-machine-header {
+        margin-top: ((fontSize * 2) + (fontSize / 2)) !important;
+        margin-bottom: ((fontSize * 2) + (fontSize / 2)) * 2 !important;
+        padding: 20px !important;
+    }
+
+    /*** Chapter Margin Styling ***/
+    div.chapter {
+        margin-top: (fontSize * (fontSize / 4em) + 38%) !important;
+    }
+}
